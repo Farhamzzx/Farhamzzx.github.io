@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--<meta charset="UTP-8">-->
+  <title>REGISTRASI</title>
+</head>
+<body>
+<h1>REGISTRASI</h1>
+<form>
+    <label>Masukan username:</label>
+	<input type="text" id="username">
+	<br>
+	<label>Masukan Password:</label>
+	<input type="Password" id="Password">
+	<br>
+	<button onclick="tampilkanHasil()">Submit</button>
+</form>
+<script>
+function tampilkanHasil() {
+    var user= document.getElementById("username").value;
+	var pass= document.getElementById("password").value;
+	if (user=="iraqisma"&&pass=="abcd") {
+	    //username benar
+		}
+	else {
+		//username salah
+		}
+}
+</script>
+</body>
+</html>

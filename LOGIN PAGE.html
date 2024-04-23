@@ -1,0 +1,32 @@
+<html lang="en"
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1><marquee width="500" height="40">*LOGIN*</h1></marquee>
+<form id="loginForm">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <button type="button" onclick="login()">Login</button>
+</form>
+
+<script>
+function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
+    if (username == "farhamz" && password == "epep") {
+        window.location.href = "HOME.html";
+        alert("Benar")
+    } else {
+        alert("Salah, mampus HAHAHAHA!");
+    }
+}
+</script>
+</body>
+</html>
